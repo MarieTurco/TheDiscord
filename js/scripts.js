@@ -6,6 +6,8 @@
 //
 // Scripts
 // 
+let logoImage;
+let trashImage;
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -51,4 +53,32 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    const logoImage = new Image();
+    logoImage.src = "assets/logo.png"; 
+    const trashImage = new Image();
+    trashImage.src = "assets/img/trash.png"; 
+
 });
+
+// Tableau des images des pages de règles
+const ruleImages = [
+    'assets/img/rules_p1.png',
+    'assets/img/rules_p2.png',
+    'assets/img/rules_p3.png'
+];
+
+// Index de la page actuelle
+let currentPage = 0;
+
+// Changer de page (précédente ou suivante)
+function changePage(direction) {
+    console.log("changePage");
+    if (direction === 'next') {
+        currentPage = (currentPage + 1) % ruleImages.length; // Passer à la page suivante
+    } else if (direction === 'prev') {
+        currentPage = (currentPage - 1 + ruleImages.length) % ruleImages.length; // Passer à la page précédente
+    }
+    
+    const ruleImage = document.getElementById('ruleImage');
+    ruleImage.src = ruleImages[currentPage]; // Mettre à jour l'image affichée
+}

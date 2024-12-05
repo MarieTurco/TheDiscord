@@ -59,7 +59,7 @@
   --bs-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family:  'Montserrat';
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -95,7 +95,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: 'Montserrat';
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -117,7 +117,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Montserrat';
   font-weight: 700;
   line-height: 1.2;
 }
@@ -305,33 +305,6 @@ svg {
   vertical-align: middle;
 }
 
-table {
-  caption-side: bottom;
-  border-collapse: collapse;
-}
-
-caption {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  color: #6c757d;
-  text-align: left;
-}
-
-th {
-  text-align: inherit;
-  text-align: -webkit-match-parent;
-}
-
-thead,
-tbody,
-tfoot,
-tr,
-td,
-th {
-  border-color: inherit;
-  border-style: solid;
-  border-width: 0;
-}
 
 label {
   display: inline-block;
@@ -484,6 +457,7 @@ progress {
 }
 
 .lead {
+  text-align: center;
   font-size: 1.25rem;
   font-weight: 300;
 }
@@ -1734,23 +1708,6 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
-.table {
-  --bs-table-color: var(--bs-body-color);
-  --bs-table-bg: transparent;
-  --bs-table-border-color: var(--bs-border-color);
-  --bs-table-accent-bg: transparent;
-  --bs-table-striped-color: var(--bs-body-color);
-  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
-  --bs-table-active-color: var(--bs-body-color);
-  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
-  --bs-table-hover-color: var(--bs-body-color);
-  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
-  width: 100%;
-  margin-bottom: 1rem;
-  color: var(--bs-table-color);
-  vertical-align: top;
-  border-color: var(--bs-table-border-color);
-}
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
   background-color: var(--bs-table-bg);
@@ -2780,7 +2737,7 @@ textarea.form-control-lg {
   --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
   display: inline-block;
   padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
-  font-family: var(--bs-btn-font-family);
+  font-family: 'Montserrat';
   font-size: var(--bs-btn-font-size);
   font-weight: var(--bs-btn-font-weight);
   line-height: var(--bs-btn-line-height);
@@ -5545,7 +5502,7 @@ textarea.form-control-lg {
   display: block;
   padding: var(--bs-tooltip-arrow-height);
   margin: var(--bs-tooltip-margin);
-  font-family: var(--bs-font-sans-serif);
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5655,7 +5612,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: var(--bs-font-sans-serif);
+  font-family:  'Montserrat';
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7911,7 +7868,7 @@ textarea.form-control-lg {
 }
 
 .font-monospace {
-  font-family: var(--bs-font-monospace) !important;
+  font-family:  'Montserrat';
 }
 
 .fs-1 {
@@ -10892,7 +10849,7 @@ html {
 }
 
 #mainNav {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat", "Noto Color Emoji";
   font-weight: 700;
 }
 #mainNav .navbar-brand {
@@ -11064,6 +11021,14 @@ canvas {
   z-index: 10; 
 }
 
+.text-style {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 0rem;
+}
+
 #resultTitle1 {
   color: #2A6224;
   text-decoration: underline;
@@ -11079,6 +11044,57 @@ canvas {
   color: #7B2E2E;
 }
 
+.modal-img {
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);
+  border-top-left-radius: var(--bs-modal-inner-border-radius);
+  border-top-right-radius: var(--bs-modal-inner-border-radius);
+}
+.modal-img .btn-close {
+  padding: calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5);
+  margin: calc(-0.5 * var(--bs-modal-header-padding-y)) calc(-0.5 * var(--bs-modal-header-padding-x)) calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
+}
+
+.tabtext-style {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 0rem;
+}
+
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  border-left: none; /* Supprime la bordure gauche */
+    border-right: none; /* Supprime la bordure droite */
+}
+
+th {
+  color: white;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 768px) {
   .pointer {
     width: 15vw;
@@ -11090,6 +11106,26 @@ canvas {
     width: 5vw;  
     height: 5vw;
     object-fit: contain; 
+  }
+
+  th img.tab-icon {
+    width: 5vw;
+    height: 4vw;
+    cursor: pointer;
+  }
+
+  .logo-tab {
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+
+  #rules-btn {
+    text-align: center;
+    width: 30vw;
+    height: 20vw;
   }
 }
 
@@ -11104,6 +11140,26 @@ canvas {
     width: 3vw;  
     height: 3vw;
     object-fit: contain;  
+  }
+
+  th img.tab-icon {
+    width: 3vw;
+    height: 2vw;
+    cursor: pointer;
+  }
+
+  .logo-tab {
+    width: 3vw;
+    height: 3vw;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+
+  #rules-btn {
+    width: 10vw;
+    height: 5vw;
+    text-align: center;
   }
 }
 
